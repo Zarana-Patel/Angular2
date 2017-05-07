@@ -1,0 +1,20 @@
+<div class="add-server-form">
+  <form>
+    <div class="form-group row">
+      <label class="col-sm-2">Server Name:</label>
+      <div class=" col-sm-10 ">
+        <input class="form-control" name="serverName" type="text" [(ngModel)]="ServerName" placeholder="Enter the serverName"/>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2">Server Type:</label>
+      <div class=" col-sm-10 ">
+        <input class="form-control" name="serverType" type="text" [(ngModel)]="ServerType" placeholder="Enter the serverType"/>
+      </div>
+    </div>
+    <button type="submit" (click)="onAddServer()" class="btn btn-primary col-sm-2 pull-right">Add Server</button>
+  </form>
+
+</div>
+
+

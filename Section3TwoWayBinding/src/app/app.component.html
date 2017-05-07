@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row"></div>
+  <div class="row">
+    <div class="col-sm-12">
+      <app-testserver (serverCreated) = ServerAdded($event)></app-testserver>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <!--Tryin to bind the server component property to the app component.
+          It will throw the error because by default component properties can access with component only not outside or to other component
+
+      <app-server  *ngFor="let serverelement of ServerElements" [element] = "serverElement"></app-server> -->
+      <app-server *ngFor="let serverelement of ServerElements" [element] = "serverelement"></app-server>
+    </div>
+  </div>
+</div>
